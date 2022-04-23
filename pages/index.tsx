@@ -16,7 +16,7 @@ const Home: NextPage = () => {
           Justin Kennedy
         </h1>
 
-        <div className="mt-6 flex max-w-4xl flex-wrap items-center justify-around sm:w-full">
+        <div className="mt-6 flex max-w-xs md:max-w-4xl flex-wrap items-center justify-around">
           <a
             href="https://vendrive.com"
             target='_blank'
@@ -29,7 +29,7 @@ const Home: NextPage = () => {
           </a>
         </div>
 
-        <div className='mt-8 flex max-w-xs flex-wrap items-center justify-around sm:w-full'>
+        <div className='mt-8 flex flex-wrap items-center justify-around w-full md:max-w-xs'>
           <a href='mailto:justin@justinkennedy.com' target='_blank'>
             <MailIcon className="h-8 w-8 text-black"/>
           </a>
