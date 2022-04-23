@@ -2,14 +2,25 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 import Image from 'next/image'
 import { MailIcon } from '@heroicons/react/solid'
+import { NextSeo } from 'next-seo'
 
 const Home: NextPage = () => {
   return (
     <div className="flex min-h-screen flex-col items-center justify-center py-2">
       <Head>
-        <title>justinkennedy.com</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Justin Kennedy</title>
+        <link rel="icon" href="/favicon.png" />
       </Head>
+
+      <NextSeo
+        title="Justin Kennedy"
+        canonical="https://justinkennedy.com/"
+        openGraph={{
+          url: 'https://justinkennedy.com',
+          title: 'Justin Kennedy',
+          site_name: 'Justin Kennedy',
+        }}
+      />
 
       <main className="flex w-full flex-1 flex-col items-center justify-center px-20 text-center">
         <h1 className="text-6xl font-bold">
