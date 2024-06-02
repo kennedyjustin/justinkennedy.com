@@ -19,12 +19,11 @@ const nextConfig = {
                             value: 'aws.justinkennedy.com',
                         },
                     ],
-                    destination: 'justinkennedy.com/aws',
+                    destination: '/aws',
                 },
             ]
         }
     },
-
 }
 
 module.exports = nextConfig
