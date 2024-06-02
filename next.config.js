@@ -5,6 +5,7 @@ const nextConfig = {
             {
                 source: '/aws',
                 destination: 'https://justinkennedy.awsapps.com/start',
+                permanent: false,
             },
         ]
     },
