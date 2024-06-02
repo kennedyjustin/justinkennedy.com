@@ -1,5 +1,13 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    async redirects() {
+        return [
+            {
+                source: '/aws',
+                destination: 'https://justinkennedy.awsapps.com/start',
+            },
+        ]
+    },
     async rewrites() {
         return {
             beforeFiles: [
@@ -11,11 +19,12 @@ const nextConfig = {
                             value: 'aws.justinkennedy.com',
                         },
                     ],
-                    destination: 'https://justinkennedy.awsapps.com/start',
+                    destination: 'justinkennedy.com/aws',
                 },
             ]
         }
     },
+
 }
 
 module.exports = nextConfig
